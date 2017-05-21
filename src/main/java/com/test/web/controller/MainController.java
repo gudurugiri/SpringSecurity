@@ -1,4 +1,4 @@
-package com.mkyong.web.controller;
+package com.test.web.controller;
 
 import javax.servlet.http.HttpServletRequest;
 

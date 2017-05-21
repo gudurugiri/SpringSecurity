@@ -1,8 +1,8 @@
-package com.mkyong.config.core;
+package com.test.config.core;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import com.mkyong.config.AppConfig;
+import com.test.config.AppConfig;
 
 public class SpringMvcInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 

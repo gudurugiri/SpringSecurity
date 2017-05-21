@@ -1,4 +1,4 @@
-package com.mkyong.config;
+package com.test.config;
 
 import java.util.Properties;
 
@@ -17,7 +17,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @EnableWebMvc
 @Configuration
-@ComponentScan({ "com.mkyong.*" })
+@ComponentScan({ "com.test.*" })
 @EnableTransactionManagement
 @Import({ SecurityConfig.class })
 public class AppConfig {
@@ -26,7 +26,7 @@ public class AppConfig {
     public SessionFactory sessionFactory() {
         LocalSessionFactoryBuilder builder = new LocalSessionFactoryBuilder(dataSource());
         builder
-        	.scanPackages("com.mkyong.users.model")
+        	.scanPackages("com.test.users.model")
             .addProperties(getHibernateProperties());
 
         return builder.buildSessionFactory();

@@ -1,4 +1,4 @@
-package com.mkyong.users.model;
+package com.test.users.model;
 
 import java.util.HashSet;
 import java.util.Set;

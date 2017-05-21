@@ -1,6 +1,6 @@
-package com.mkyong.users.dao;
+package com.test.users.dao;
 
-import com.mkyong.users.model.User;
+import com.test.users.model.User;
 
 public interface UserDao {
 
