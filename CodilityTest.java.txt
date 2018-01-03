@@ -95,4 +95,26 @@ public class AdjacentTest {
             } 
             return true; 
         } 
+	
+	// this is from some of the sites start 
+	public int solution_1(int[] array) {
+		if (array.length == 1) {
+			return -2;
+		}
+
+		sort(array);
+
+		long minimumDistance = Long.MAX_VALUE;
+
+		for (int i = 1; i < array.length; i++) {
+			long distance = (long) array[i] - array[i-1];
+			if (distance < minimumDistance) {
+				minimumDistance = distance;
+			}
+		}
+
+		return minimumDistance > 100000000 ? -1 : (int) minimumDistance;
+	}
+	// end 
+	
 }
